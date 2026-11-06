@@ -126,7 +126,7 @@ This repository contains no harmful text.
 @misc{waibl2026eurosafeguard,
   title   = {EuroSafeGuard: Open Constitutional Classifiers},
   author  = {Waibl, Leonhard and Chen, Yen-Shan and Simko, Samuel and Thomas, Aditya and
-             Singh, Arth and Diwan, Nirav and Michalak, Felix and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
+             Singh, Arth and Diwan, Nirav and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
   url     = {https://guard.safe.eu/paper.pdf},
   year    = {2026}
 }

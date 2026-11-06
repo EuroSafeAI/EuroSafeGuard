@@ -17,8 +17,6 @@ authors:
     given-names: Arth
   - family-names: Diwan
     given-names: Nirav
-  - family-names: Michalak
-    given-names: Felix
   - family-names: Schölkopf
     given-names: Bernhard
   - family-names: Jin
@@ -41,8 +39,6 @@ preferred-citation:
       given-names: Arth
     - family-names: Diwan
       given-names: Nirav
-    - family-names: Michalak
-      given-names: Felix
     - family-names: Schölkopf
       given-names: Bernhard
     - family-names: Jin
