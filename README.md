@@ -23,6 +23,9 @@ classifiers), on up to three devices. Llama-3.1-8B-Instruct is gated: accept its
 
 ## Quickstart
 
+The model repo has five input-classifier training runs (`seed=0` to `4`). The paper reports their mean. Runs differ
+on search attacks (11–48% of PAIR behaviors broken, run 0 is the weakest), so choose one with `seed=k`.
+
 ```python
 from eurosafeguard import EuroSafeGuard
 
@@ -134,6 +137,6 @@ This repository contains no harmful text.
 
 ## License
 
-Code and weights: [Apache-2.0](LICENSE). Base models keep their licenses (Llama 3.1 Community License, Qwen license).
+Code and weights: [Apache-2.0](LICENSE). Base models keep their licenses (Llama 3.1 Community License, Apache-2.0 for Qwen3.5-9B).
 Datasets list a license per row; several sources are non-commercial. Report bypasses as described in
 [SECURITY.md](SECURITY.md).
