@@ -1,6 +1,6 @@
 # EuroSafeGuard: Open Constitutional Classifiers
 
-[Paper](https://guard.safe.eu/paper.pdf) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
+[Paper](https://guard.safe.eu/paper.pdf) ([PDF in this repo](paper/EuroSafeGuard.pdf)) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
 [Model](https://huggingface.co/EuroSafeAI/EuroSafeGuard-v1) · [Training prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-v1-prompts) ·
 [Project page](https://guard.safe.eu)
 
