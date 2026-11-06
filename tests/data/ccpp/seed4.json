@@ -1,0 +1,28 @@
+{
+ "prompt_probe_mu": -3.175523367513237,
+ "prompt_probe_sd": 2.1186140691482915,
+ "reply_probe_mu": -9.932303496837486,
+ "reply_probe_sd": 5.438210043896073,
+ "cls_logit_mu": -4.37695712473478,
+ "cls_logit_sd": 4.05061555847281,
+ "stage1_thr": 1.8225955823943352,
+ "stage2_thr": 1.7918130412701188,
+ "weights": {
+  "probe": 0.55,
+  "classifier": 0.45
+ },
+ "input_only_thr_5pct": -0.46068576,
+ "second_stage": {
+  "model": "EuroSafeAI/EuroSafeGuard gate/seed4",
+  "template": "User: {prompt}\n\nAssistant: {reply}",
+  "max_length": 4096,
+  "score": "logit of the max-head probability (clipped to [1e-6, 1-1e-6])"
+ },
+ "calibration": {
+  "pool": "2554 WildChat-clean rows (3,000-row sample) + 2568 XSTest / OR-Bench calibration rows; z = (x - mean) / population sd",
+  "stage1": "WildChat-clean 5.52% escalated (6.83% of the pool)",
+  "stage2": "blocks 0.196% of WildChat-clean (matched to EuroSafeGuard (Full), at most 0.22%); pool flag-rate target 3.00%",
+  "stage2_thr_at_1pct_pool": 2.513667666757781,
+  "replies": "Llama-3-8B-Instruct replies"
+ }
+}
