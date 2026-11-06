@@ -1,6 +1,6 @@
 # EuroSafeGuard: Open Constitutional Classifiers
 
-[Paper](https://arxiv.org/abs/TBD) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
+[Paper](https://guard.safe.eu/paper.pdf) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
 [Model](https://huggingface.co/EuroSafeAI/EuroSafeGuard-v1) · [Training prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-v1-prompts) ·
 [Project page](https://guard.safe.eu)
 
@@ -123,11 +123,11 @@ This repository contains no harmful text.
 ## Citation
 
 ```bibtex
-@article{waibl2026eurosafeguard,
+@misc{waibl2026eurosafeguard,
   title   = {EuroSafeGuard: Open Constitutional Classifiers},
   author  = {Waibl, Leonhard and Chen, Yen-Shan and Simko, Samuel and Thomas, Aditya and
              Singh, Arth and Diwan, Nirav and Michalak, Felix and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
-  journal = {arXiv preprint arXiv:TBD},
+  url     = {https://guard.safe.eu/paper.pdf},
   year    = {2026}
 }
 ```

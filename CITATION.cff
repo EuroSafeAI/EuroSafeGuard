@@ -24,9 +24,9 @@ authors:
   - family-names: Jin
     given-names: Zhijing
 preferred-citation:
-  type: article
+  type: generic
   title: "EuroSafeGuard: Open Constitutional Classifiers"
-  journal: "arXiv preprint arXiv:TBD"
+  url: "https://guard.safe.eu/paper.pdf"
   year: 2026
   authors:
     - family-names: Waibl
