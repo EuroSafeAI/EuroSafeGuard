@@ -9,6 +9,8 @@ and escalates suspicious requests to an input classifier and an exchange classif
 
 <p align="center"><img src="assets/overview.png" width="900" alt="EuroSafeGuard: an activation probe on the protected model escalates suspicious requests to an input classifier and an exchange classifier, which decide whether the reply is shown or blocked"></p>
 
+<p align="center"><img src="assets/example.png" width="900" alt="A jailbreak answered by the unprotected model and blocked by EuroSafeGuard; shading shows the probe score per token"></p>
+
 ## Install
 
 ```bash
@@ -42,6 +44,8 @@ Command line: `eurosafeguard check --prompt "..." --reply "..." --mode full`. Ru
   note (`guard.system_note(category)`); the exchange classifier then checks the reply.
 
 ## Results
+
+<p align="center"><img src="assets/bars.png" width="720" alt="Mean robustness over six attack sets for EuroSafeGuard and 16 open guards, all flagging 5% of benign WildChat traffic"></p>
 
 Input stage at the same false-positive budget (5% of WildChat-clean flagged). Recall in %; PAIR and TAP in % of
 behaviors broken (lower is better). Selected rows of the paper's Table 2.
