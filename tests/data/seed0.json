@@ -1,0 +1,24 @@
+{
+ "probe_mu": -6.815694701503735,
+ "probe_sd": 3.444286874679132,
+ "gate_mu": 0.03333534521305959,
+ "gate_sd": 0.10919123782498313,
+ "alert_input_thr": 1.1328190803989433,
+ "exch_thr_1pct": 0.5512292075157089,
+ "exch_thr_20pct": 0.017514675483107523,
+ "heads": [
+  "CBRN",
+  "Cyber",
+  "Harm to Minors",
+  "Harmful Manipulation",
+  "Hate Speech",
+  "Illegal Activities",
+  "Information Integrity",
+  "Physical Harm",
+  "Privacy",
+  "Self-Harm",
+  "Sexual Content"
+ ],
+ "calibration": "Scores are z-scored on WildChat-clean (6,853 conversations). alert_input_thr: (probe z + gate z)/2 flags 5% of WildChat-clean prompts. exch_thr_1pct / exch_thr_20pct: exchange-classifier max-head probability flagging 1% / 20% of WildChat-clean replies.",
+ "seed": 0
+}

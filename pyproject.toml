@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eurosafeguard"
+version = "1.0.0"
+description = "EuroSafeGuard: open constitutional classifiers (activation probe + input classifier + exchange classifier)"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "EuroSafeAI" }]
+keywords = ["llm-safety", "guardrail", "constitutional-classifiers", "jailbreak-detection"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.4",
+    "transformers>=5.0",   # Qwen3.5 support
+    "peft>=0.17",
+    "safetensors",
+    "huggingface_hub>=0.30",
+    "numpy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+# Fast Qwen3.5 linear-attention kernels (otherwise transformers falls back to a slower reference implementation).
+fast = ["flash-linear-attention", "kernels"]
+# Training the input / exchange classifiers uses the TACTIC trainer (pinned commit); the probe trainer needs scikit-learn.
+train = [
+    "tactic @ git+https://github.com/Leonhard17/TACTIC@b98ea65b9441a94449d09337a2963b52b569e37f",
+    "scikit-learn",
+    "wandb",
+]
+dev = ["pytest"]
+
+[project.scripts]
+eurosafeguard = "eurosafeguard.cli:main"
+
+[project.urls]
+Homepage = "https://guard.safe.eu"
+Models = "https://huggingface.co/EuroSafeAI/EuroSafeGuard"
+
+[tool.setuptools]
+packages = ["eurosafeguard"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
