@@ -115,7 +115,7 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     def common(p):
-        p.add_argument("--model", default="EuroSafeAI/EuroSafeGuard", help="Hugging Face repo or local folder")
+        p.add_argument("--model", default="EuroSafeAI/EuroSafeGuard-v1", help="Hugging Face repo or local folder")
         p.add_argument("--seed", type=int, default=0, help="input-classifier training run (gate/seed0..4)")
         p.add_argument("--mode", choices=("alert", "full"), default="alert")
         p.add_argument("--devices", default="cuda", help="one device, or three: probe LM, gate, exchange")

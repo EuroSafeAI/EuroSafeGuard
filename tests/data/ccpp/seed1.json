@@ -13,7 +13,7 @@
  },
  "input_only_thr_5pct": -0.46068576,
  "second_stage": {
-  "model": "EuroSafeAI/EuroSafeGuard gate/seed1",
+  "model": "EuroSafeAI/EuroSafeGuard-v1 gate/seed1",
   "template": "User: {prompt}\n\nAssistant: {reply}",
   "max_length": 4096,
   "score": "logit of the max-head probability (clipped to [1e-6, 1-1e-6])"

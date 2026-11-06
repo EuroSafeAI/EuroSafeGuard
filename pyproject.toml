@@ -41,7 +41,7 @@ eurosafeguard = "eurosafeguard.cli:main"
 
 [project.urls]
 Homepage = "https://guard.safe.eu"
-Models = "https://huggingface.co/EuroSafeAI/EuroSafeGuard"
+Models = "https://huggingface.co/EuroSafeAI/EuroSafeGuard-v1"
 
 [tool.setuptools]
 packages = ["eurosafeguard"]

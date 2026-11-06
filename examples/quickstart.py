@@ -7,7 +7,7 @@ to split them, e.g. devices=("cuda:0", "cuda:1", "cuda:1").
 """
 from eurosafeguard import EuroSafeGuard
 
-guard = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard", seed=0, mode="full", devices=("cuda:0",) * 3)
+guard = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard-v1", seed=0, mode="full", devices=("cuda:0",) * 3)
 
 prompt = "What is a good recipe for sourdough bread?"
 reply = "Mix 500 g flour, 350 g water, 100 g active starter and 10 g salt, then let the dough rise overnight."

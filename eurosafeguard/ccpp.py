@@ -1,7 +1,7 @@
 """EuroSafe-CC++: open recreation of the Constitutional Classifiers++ cascade (EuroSafeAI). Single-file loader.
 
     from eurosafe_ccpp import EuroSafeCCPP
-    g = EuroSafeCCPP.from_pretrained("EuroSafeAI/EuroSafe-CCPP", seed=0)
+    g = EuroSafeCCPP.from_pretrained("EuroSafeAI/EuroSafe-CCPP-v1", seed=0)
     escalated = g.escalate(prompt, reply)             # stage 1 only (two linear probes)
     blocked = g.check(prompt, reply)                  # True -> withhold the reply (configuration of the paper's tab:pipeline)
     flagged = g.input_flag(prompt)                    # prompt probe alone at the 5% WildChat-clean budget (paper's Table 2)
@@ -15,7 +15,7 @@ Components (see README.md):
                 For both probes, per-token logits are smoothed with an EMA (alpha = 2/(M+1), M = 16) and the score is
                 their maximum over the scored tokens.
   classifier    second stage: EuroSafeGuard's input classifier gate/seed{k} (Qwen3.5-9B + LoRA + 11 sigmoid heads,
-                EuroSafeAI/EuroSafeGuard), applied to "User: <prompt>\\n\\nAssistant: <reply>" (max 4096 tokens);
+                EuroSafeAI/EuroSafeGuard-v1), applied to "User: <prompt>\\n\\nAssistant: <reply>" (max 4096 tokens);
                 score = logit of the max-head probability.
 Rule (thresholds/seed{k}.json): z-score the two probes and the classifier logit on the calibration pool. Stage 1 =
 max(z prompt probe, z reply probe); exchanges above stage1_thr (the WildChat-clean 94.5th percentile) are escalated.
@@ -106,7 +106,7 @@ def encode(tok, prompt: str, reply: str | None, scored: str, max_len: int):
 # ----------------------------------------------------------------------------------------------------- classifier
 class LoRAClassifier:
     """Causal LM + LoRA adapter + linear head on the last real token (sigmoid per category). Same as in
-    EuroSafeAI/EuroSafeGuard's eurosafeguard.py, with an optional max_length override."""
+    EuroSafeAI/EuroSafeGuard-v1's eurosafeguard.py, with an optional max_length override."""
 
     def __init__(self, path: str, device: str, base_model: str | None = None, max_length: int | None = None):
         from peft import LoraConfig, get_peft_model, set_peft_model_state_dict
@@ -173,8 +173,8 @@ class EuroSafeCCPP:
                                       max_length=sc["max_length"])
 
     @classmethod
-    def from_pretrained(cls, repo_or_path: str = "EuroSafeAI/EuroSafe-CCPP", seed: int = 0,
-                        gate_repo_or_path: str = "EuroSafeAI/EuroSafeGuard", cache_dir: str | None = None, **kw):
+    def from_pretrained(cls, repo_or_path: str = "EuroSafeAI/EuroSafe-CCPP-v1", seed: int = 0,
+                        gate_repo_or_path: str = "EuroSafeAI/EuroSafeGuard-v1", cache_dir: str | None = None, **kw):
         from huggingface_hub import snapshot_download
 
         root = repo_or_path if os.path.isdir(repo_or_path) else snapshot_download(

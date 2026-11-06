@@ -1,7 +1,7 @@
 """Turn the released EuroSafeGuard training data into the CSVs the trainers read.
 
-The data is gated on Hugging Face: request access to EuroSafeAI/EuroSafeGuard-prompts and
-EuroSafeAI/EuroSafeGuard-replies, then `huggingface-cli login`. Rows copied from gated or non-redistributable sources
+The data is gated on Hugging Face: request access to EuroSafeAI/EuroSafeGuard-v1-prompts and
+EuroSafeAI/EuroSafeGuard-v1-replies, then `huggingface-cli login`. Rows copied from gated or non-redistributable sources
 are released without their text; --reconstruct rebuilds them with the dataset's own reconstruct.py, which needs
 access to those sources too (WildGuardMix, WildJailbreak, WildChat-1M, SOSBench, the CeSIA constitution datasets).
 Rows whose text is still missing are dropped, and the count is printed.
@@ -26,9 +26,9 @@ from pathlib import Path
 import pandas as pd
 
 FILES = {  # name -> (Hugging Face dataset repo, path in the repo)
-    "gate": ("EuroSafeAI/EuroSafeGuard-prompts", "data/gate_train.parquet"),
-    "probe": ("EuroSafeAI/EuroSafeGuard-prompts", "data/probe_train.parquet"),
-    "exchange": ("EuroSafeAI/EuroSafeGuard-replies", "data/exchange_train.parquet"),
+    "gate": ("EuroSafeAI/EuroSafeGuard-v1-prompts", "data/gate_train.parquet"),
+    "probe": ("EuroSafeAI/EuroSafeGuard-v1-prompts", "data/probe_train.parquet"),
+    "exchange": ("EuroSafeAI/EuroSafeGuard-v1-replies", "data/exchange_train.parquet"),
 }
 
 

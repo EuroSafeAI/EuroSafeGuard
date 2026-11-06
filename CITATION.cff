@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use EuroSafeGuard, please cite the paper."
 title: "EuroSafeGuard: Open Constitutional Classifiers"
 repository-code: "https://github.com/EuroSafeAI/EuroSafeGuard"
+url: "https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58"
 license: Apache-2.0
 authors:
   - family-names: Waibl

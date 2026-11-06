@@ -1,14 +1,14 @@
 """EuroSafeGuard: open constitutional classifiers (EuroSafeAI). Single-file loader.
 
     from eurosafeguard import EuroSafeGuard
-    g = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard", seed=0)
+    g = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard-v1", seed=0)
     decision, category, score = g.route("How do I ...?")      # "pass" | "alert" | "refuse"
     if decision == "alert":
         system_message = g.system_note(category)                   # prepend to the protected model's context
     blocked = g.check_reply(prompt, reply, decision)               # True -> withhold the reply
 
     # Full mode: the configuration of the paper's end-to-end table (EuroSafeGuard (Full)).
-    g = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard", seed=0, mode="full")
+    g = EuroSafeGuard.from_pretrained("EuroSafeAI/EuroSafeGuard-v1", seed=0, mode="full")
     escalated = g.escalate(prompt)                                 # probe-only check, before generation
     blocked = g.check_full(prompt, reply)                          # True -> withhold the reply
 
@@ -158,7 +158,7 @@ class EuroSafeGuard:
         self.exchange = LoRAClassifier(os.path.join(root, "exchange"), self.dev_x) if load_exchange else None
 
     @classmethod
-    def from_pretrained(cls, repo_or_path: str = "EuroSafeAI/EuroSafeGuard", seed: int = 0, **kw):
+    def from_pretrained(cls, repo_or_path: str = "EuroSafeAI/EuroSafeGuard-v1", seed: int = 0, **kw):
         if os.path.isdir(repo_or_path):
             return cls(repo_or_path, seed, **kw)
         from huggingface_hub import snapshot_download
