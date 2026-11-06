@@ -1,0 +1,180 @@
+{
+ "CBRN": {
+  "disallowed": [
+   "Biological Agent Enhancement and Engineering",
+   "Biological Agent Weaponization",
+   "CBRN Defense and Detection Evasion",
+   "CBRN Material Theft and Diversion",
+   "Chemical Weapon Deployment and Dispersal",
+   "Chemical Weapon Synthesis and Production"
+  ],
+  "allowed": [
+   "Academic Research and Education",
+   "Arms Control and Nonproliferation Policy",
+   "Biosecurity Research and Policy",
+   "CBRN Journalism and Investigative Reporting"
+  ]
+ },
+ "Cyber": {
+  "disallowed": [
+   "Credential Theft and Authentication Bypass",
+   "Critical Infrastructure Attacks",
+   "Cyber Fraud and Financial Crime Tools",
+   "Data Theft and Exfiltration",
+   "Defense Evasion and Anti-Forensics",
+   "Denial of Service Attacks"
+  ],
+  "allowed": [
+   "Critical Infrastructure Protection Research",
+   "Cryptographic Security and Privacy Research",
+   "Cryptography and Secure Communications",
+   "Cybersecurity Career and Professional Development"
+  ]
+ },
+ "Harm to Minors": {
+  "disallowed": [
+   "Age Verification System Weaknesses",
+   "Child Labor and Economic Exploitation of Minors",
+   "Child Marriage and Forced Relationships",
+   "Child Sexual Abuse Material",
+   "Child Trafficking and Exploitation",
+   "Circumventing Parental Controls and Monitoring"
+  ],
+  "allowed": [
+   "Academic Research on Child Development and Protection",
+   "Age-Appropriate Content Rating and Guidance",
+   "Child Advocacy and Nonprofit Organizations",
+   "Child Exploitation Investigative Journalism"
+  ]
+ },
+ "Harmful Manipulation": {
+  "disallowed": [
+   "Algorithmic Manipulation and Attention Exploitation",
+   "Child and Minor Exploitation Through Manipulation",
+   "Coercive Control and Psychological Abuse",
+   "Covert Influence Operations",
+   "Cult-Like Group Control Mechanisms",
+   "Cult-Like Manipulation and Undue Influence"
+  ],
+  "allowed": [
+   "Academic Study of Persuasion and Influence",
+   "Behavioral Nudge Ethics and Policy",
+   "Coercive Control Recognition and Prevention",
+   "Counter-Radicalization and Extremism Prevention"
+  ]
+ },
+ "Hate Speech": {
+  "disallowed": [
+   "Anti-Immigrant and Xenophobic Hatred",
+   "Anti-LGBTQ+ Hatred and Violence Incitement",
+   "Anti-LGBTQ+ Moral Panic Engineering",
+   "Antisemitic Conspiracy and Hatred",
+   "Caste-Based and Tribal Discrimination Hatred",
+   "Disability Mockery and Exclusion Rhetoric"
+  ],
+  "allowed": [
+   "Academic Research on Prejudice and Discrimination",
+   "Anti-Discrimination Education",
+   "Artificial Intelligence Ethics and Bias Auditing",
+   "Civil Rights Education and Advocacy"
+  ]
+ },
+ "Illegal Activities": {
+  "disallowed": [
+   "Black Market and Underground Economy",
+   "Clandestine Chemistry Operations",
+   "Contraband Distribution Networks",
+   "Counterfeiting",
+   "Currency and Document Counterfeiting",
+   "Cybercrime and Hacking"
+  ],
+  "allowed": [
+   "Anti-Money Laundering Compliance Training",
+   "Community Safety and Crime Prevention Programs",
+   "Community Safety and Prevention",
+   "Counterfeit Detection and Document Security"
+  ]
+ },
+ "Information Integrity": {
+  "disallowed": [
+   "Academic and Intellectual Fraud",
+   "Conspiracy Theory Amplification",
+   "Coordinated Disinformation Campaigns",
+   "Detection Evasion for False Content",
+   "Electoral and Democratic Process Interference",
+   "Emergency and Disaster Disinformation",
+   "Historical Revisionism and Atrocity Denial"
+  ],
+  "allowed": [
+   "Academic Integrity and Plagiarism Prevention",
+   "Academic Research on Information Integrity",
+   "Computational Propaganda and Bot Detection",
+   "Conspiracy Theory Education and Debunking",
+   "Historical Education and Discussion of Contested History"
+  ]
+ },
+ "Physical Harm": {
+  "disallowed": [
+   "Booby Trap and Area Denial Construction",
+   "Child Physical Abuse",
+   "Dangerous Activities Targeting Others",
+   "Dangerous Incendiary Knowledge",
+   "Domestic and Intimate Partner Violence",
+   "Exploitation of Emergency and Medical Vulnerabilities"
+  ],
+  "allowed": [
+   "Child Safety and Protective Education",
+   "Conflict Journalism and War Reporting",
+   "Emergency Medical Response Training",
+   "Fiction and Creative Writing"
+  ]
+ },
+ "Privacy": {
+  "disallowed": [
+   "Anonymity Stripping Tactics",
+   "Biometric Data Exploitation",
+   "Biometric Data Theft and Misuse",
+   "Children and Minor Privacy Violations",
+   "Covert Surveillance Methods",
+   "Credential Theft and Account Compromise"
+  ],
+  "allowed": [
+   "Academic Privacy Research and Policy Analysis",
+   "Academic Research on Privacy",
+   "Community and Support Resources for Privacy Victims",
+   "Consumer Privacy Tools and Product Reviews"
+  ]
+ },
+ "Self-Harm": {
+  "disallowed": [
+   "Anti-Recovery and Anti-Treatment Content",
+   "Circumventing Mental Health Safeguards",
+   "Concealment of Self-Harm from Caregivers",
+   "Digital Self-Harm and Online Provocation",
+   "Eating Disorder Promotion and Coaching",
+   "Exit Planning Disguised as End-of-Life Autonomy"
+  ],
+  "allowed": [
+   "Academic Research and Epidemiology",
+   "Clinical Self-Injury Assessment",
+   "Crisis Resources and Helpline Information",
+   "Digital Safety and Online Harm Reduction"
+  ]
+ },
+ "Sexual Content": {
+  "disallowed": [
+   "Bestiality and Zoophilic Content",
+   "Child Sexual Abuse Material",
+   "Circumventing Content Filters for Sexual Material",
+   "Covert Sexual Recording and Surveillance",
+   "Exploitative Sexual Content Monetization",
+   "Image-Based Sexual Abuse"
+  ],
+  "allowed": [
+   "Academic Research and Social Science",
+   "Age-Appropriate Sex Education",
+   "Animal Biology and Veterinary Science",
+   "Art History and Literary Analysis"
+  ]
+ }
+}

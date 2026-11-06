@@ -1,0 +1,24 @@
+{
+ "inputs": {
+  "samples_per_entry": 3,
+  "style": "short",
+  "batch_size": 256
+ },
+ "outputs": {
+  "check_outputs": true,
+  "batch_size": 256
+ },
+ "paraphrase": {
+  "paraphrases_per_sample": 1,
+  "target": "both",
+  "check": true,
+  "batch_size": 256
+ },
+ "jailbreaks": {
+  "seed": 42,
+  "batch_size": 256
+ },
+ "build": {
+  "include_paraphrases": true
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "_comment": "Exchange classifier of EuroSafeGuard, as released in exchange/ (torchrun --nproc_per_node=3, seed 0; learning rates are scaled by sqrt(3) automatically). Text = 'User: <prompt>' + separator + 'Assistant: <reply>'.",
+  "eurosafeguard": {"consistency": 0.0, "benign_frac": 0.5, "grad_checkpointing": false},
+  "model_name": "Qwen/Qwen3.5-9B",
+  "objective": "multilabel",
+  "balanced_sampling": false,
+  "dataset_text_column": "prompt_response",
+  "dataset_category_column": "category",
+  "dataset_entry_type_column": "entry_type",
+  "eval_frac": 0.02,
+  "eval_every": 500,
+  "lora_r": 128,
+  "lora_alpha": 256,
+  "lora_dropout": 0.0456,
+  "lr_backbone": 5.29e-05,
+  "lr_head": 0.00012,
+  "batch_size": 4,
+  "max_steps": 8000,
+  "max_length": 2048,
+  "save_every": 2000
+}

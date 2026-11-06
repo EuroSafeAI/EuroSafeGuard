@@ -1,0 +1,33 @@
+{
+ "dataset_type": "training",
+ "models": {
+  "gen": {
+   "name": "huihui-qwen3.8-27b",
+   "backend_type": "vllm"
+  },
+  "check": {
+   "name": "huihui-qwen3.8-27b",
+   "backend_type": "vllm"
+  },
+  "translation": {
+   "name": "huihui-qwen3.8-27b",
+   "backend_type": "vllm"
+  },
+  "paraphraser": {
+   "name": "huihui-qwen3.8-27b",
+   "backend_type": "vllm"
+  },
+  "paraphrase_check": {
+   "name": "huihui-qwen3.8-27b",
+   "backend_type": "vllm"
+  }
+ },
+ "taxonomy": "harmful",
+ "benign_taxonomy": "benign",
+ "params_file": "params_short.json",
+ "resume": true,
+ "stages": [
+  "inputs"
+ ],
+ "prompt_dir": "data/redact/prompts"
+}

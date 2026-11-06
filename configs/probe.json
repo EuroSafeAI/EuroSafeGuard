@@ -1,0 +1,13 @@
+{
+  "_comment": "Activation probe of EuroSafeGuard, as released in probe/ (python training/train_probe.py --config configs/probe.json ...).",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "kind": "mlp",
+  "hidden": 256,
+  "layers": "all",
+  "max_len": 2048,
+  "bs": 8,
+  "epochs": 1,
+  "lr": 0.001,
+  "M": 16,
+  "seed": 0
+}
