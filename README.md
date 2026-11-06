@@ -134,7 +134,7 @@ use [`eval/recall_at_budget.py`](eval/recall_at_budget.py).
 | 1. Policy | `data/constitution/` | 11 categories, each with disallowed and allowed subcategories (BELLS-O taxonomy) |
 | 2. Data generation | `data/redact/` | [REDACT](https://github.com/CentreSecuriteIA/REDACT) recipes: prompts in two styles at four severity levels, a checker, jailbreak rewrites, replies, paraphrases |
 | 3. Augmentation | `data/augment.py` | obfuscations, Best-of-N noise and jailbreak templates, applied to benign and harmful prompts alike; plain twins |
-| 4. Classifiers | `training/train_classifier.py` | Qwen3.5-9B + LoRA + 11 heads with a twin consistency loss; gate and exchange configs in `configs/` |
+| 4. Classifiers | `training/train_classifier.py` | Qwen3.5-9B + LoRA + 11 heads (the gate also uses a twin consistency loss); gate and exchange configs in `configs/` |
 | 5. Probe | `training/train_probe.py` | MLP probe on the protected model's activations, trained with the CC++ loss |
 | 6. Calibration | `eurosafeguard calibrate` | z-statistics, escalation cut and per-benchmark caps |
 

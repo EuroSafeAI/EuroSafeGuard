@@ -70,7 +70,7 @@ terms first) and fills the rows by SHA-256. Rows still without text are dropped.
 Harmful Manipulation, Hate Speech, Illegal Activities, Information Integrity, Physical Harm, Privacy, Self-Harm,
 Sexual Content), plus general benign requests. Its 4,904 entries come from the CeSIA constitution
 ([centrepourlasecuriteia/constitution-dataset](https://huggingface.co/datasets/centrepourlasecuriteia/constitution-dataset),
-written with Claude Opus 4.6 and refined by hand). Each entry describes one behavior at one of four severity levels:
+written with Claude Opus 4.6). Each entry describes one behavior at one of four severity levels:
 harmful, dual-use harmful, dual-use benign, benign. We dropped its three categories on sexual content involving
 minors (46 entries) and generated nothing for them. `constitution/taxonomy.json` summarizes the policy: for each of the
 11 categories, subcategories of the constitution it disallows (harmful and dual-use harmful entries) and allows
