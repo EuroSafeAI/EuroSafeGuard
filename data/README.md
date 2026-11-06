@@ -28,10 +28,10 @@ prepare.py                        released data -> trainer CSVs
 |---|---|---|---|
 | [EuroSafeAI/EuroSafeGuard-prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-prompts) | `gate` | 540,536 | input classifiers (gate) |
 | | `probe` | 116,524 | activation probe |
-| [EuroSafeAI/EuroSafeGuard-replies](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-replies) | `exchange_train.parquet` | 262,865 | exchange classifier |
+| EuroSafeGuard-replies (available on request) | `exchange_train.parquet` | 262,865 | exchange classifier |
 
-Both datasets are gated. Request access on each dataset page: requests are approved by hand and need a clear
-research purpose (building or evaluating safeguards). Then log in and run, from the repository root:
+The prompts dataset is gated. Request access on its page: requests are approved by hand and need a clear
+research purpose (building or evaluating safeguards). The replies dataset is available on request. Then log in and run, from the repository root:
 
 ```bash
 huggingface-cli login

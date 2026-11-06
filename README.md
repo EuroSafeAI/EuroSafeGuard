@@ -1,7 +1,7 @@
 # EuroSafeGuard: Open Constitutional Classifiers
 
 [Paper](https://arxiv.org/abs/TBD) · [Models](https://huggingface.co/EuroSafeAI/EuroSafeGuard) ·
-[Training prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-prompts) · [Demo](https://guard.safe.eu)
+[Training prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-prompts) · [Project page](https://guard.safe.eu)
 
 EuroSafeGuard is an open guardrail for a language model that you do not retrain. An activation probe reads the
 protected model's hidden states and screens every request. The requests it scores highest go on to a fine-tuned
@@ -201,9 +201,9 @@ the recreation differs from CC++.
 
 The training data is on Hugging Face:
 [EuroSafeGuard-prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-prompts) has the prompts for the input
-classifiers and the probe, and
-[EuroSafeGuard-replies](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-replies) has the prompt-reply pairs
-for the exchange classifier. Both are gated behind a request form, and each request is approved by hand. A request
+classifiers and the probe. It is gated behind a request form, and each request is approved by hand. The prompt-reply
+pairs used to train the exchange classifier contain harmful model replies and are not public. They are available on
+request for safety research (contact the authors). A request
 needs a clear research purpose, such as building or evaluating safeguards. Some rows come from datasets that do not
 allow redistribution. Their text is withheld and can be rebuilt from the original sources with `data/prepare.py
 --reconstruct`. This repository itself contains no harmful text.

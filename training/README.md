@@ -9,6 +9,10 @@ checkpoints; the training files come from `data/prepare.py` (or from your own co
 | Exchange classifier | `train_classifier.py` | `configs/exchange.json` | `exchange/` | 3 × 96 GB GPUs, 8k steps |
 | Activation probe | `train_probe.py` | `configs/probe.json` | `probe/` | 1 × 96 GB GPU, one epoch |
 
+Training needs a CUDA toolkit (nvcc) that matches your PyTorch. Install torch first, then
+`pip install causal-conv1d --no-build-isolation`, then the training extra. The probe alone needs only
+`pip install scikit-learn`.
+
 ```bash
 pip install -e ".[train]"            # adds the TACTIC trainer (pinned commit), scikit-learn, wandb
 python data/prepare.py --out data/train --reconstruct
