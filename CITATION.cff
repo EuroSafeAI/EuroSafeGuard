@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use EuroSafeGuard, please cite the paper."
+title: "EuroSafeGuard: Open Constitutional Classifiers"
+repository-code: "https://github.com/EuroSafeAI/EuroSafeGuard"
+license: Apache-2.0
+authors:
+  - family-names: Waibl
+    given-names: Leonhard
+  - family-names: Chen
+    given-names: Yen-Shan
+  - family-names: Simko
+    given-names: Samuel
+  - family-names: Michalak
+    given-names: Felix
+  - family-names: Diwan
+    given-names: Nirav
+  - family-names: Singh
+    given-names: Arth
+  - family-names: Thomas
+    given-names: Aditya
+  - family-names: Schölkopf
+    given-names: Bernhard
+  - family-names: Jin
+    given-names: Zhijing
+preferred-citation:
+  type: article
+  title: "EuroSafeGuard: Open Constitutional Classifiers"
+  journal: "arXiv preprint arXiv:TBD"
+  year: 2026
+  authors:
+    - family-names: Waibl
+      given-names: Leonhard
+    - family-names: Chen
+      given-names: Yen-Shan
+    - family-names: Simko
+      given-names: Samuel
+    - family-names: Michalak
+      given-names: Felix
+    - family-names: Diwan
+      given-names: Nirav
+    - family-names: Singh
+      given-names: Arth
+    - family-names: Thomas
+      given-names: Aditya
+    - family-names: Schölkopf
+      given-names: Bernhard
+    - family-names: Jin
+      given-names: Zhijing
