@@ -24,7 +24,7 @@ authors:
 preferred-citation:
   type: generic
   title: "EuroSafeGuard: Open Constitutional Classifiers"
-  url: "https://guard.safe.eu/paper.pdf"
+  url: "https://guard.safe.eu/paper"
   year: 2026
   authors:
     - family-names: Waibl

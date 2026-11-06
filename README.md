@@ -1,6 +1,6 @@
 # EuroSafeGuard: Open Constitutional Classifiers
 
-[Paper](https://guard.safe.eu/paper.pdf) ([PDF in this repo](paper/EuroSafeGuard.pdf)) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
+[Paper](https://guard.safe.eu/paper) ([PDF in this repo](paper/EuroSafeGuard.pdf)) · [Hugging Face collection](https://huggingface.co/collections/EuroSafeAI/eurosafeguard-v1-6aedf578437a9646077d1b58) ·
 [Model](https://huggingface.co/EuroSafeAI/EuroSafeGuard-v1) · [Training prompts](https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-v1-prompts) ·
 [Project page](https://guard.safe.eu)
 
@@ -130,7 +130,7 @@ This repository contains no harmful text.
   title   = {EuroSafeGuard: Open Constitutional Classifiers},
   author  = {Waibl, Leonhard and Chen, Yen-Shan and Simko, Samuel and Thomas, Aditya and
              Singh, Arth and Diwan, Nirav and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
-  url     = {https://guard.safe.eu/paper.pdf},
+  url     = {https://guard.safe.eu/paper},
   year    = {2026}
 }
 ```
