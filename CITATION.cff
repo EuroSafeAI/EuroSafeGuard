@@ -10,14 +10,14 @@ authors:
     given-names: Yen-Shan
   - family-names: Simko
     given-names: Samuel
-  - family-names: Michalak
-    given-names: Felix
-  - family-names: Diwan
-    given-names: Nirav
-  - family-names: Singh
-    given-names: Arth
   - family-names: Thomas
     given-names: Aditya
+  - family-names: Singh
+    given-names: Arth
+  - family-names: Diwan
+    given-names: Nirav
+  - family-names: Michalak
+    given-names: Felix
   - family-names: Schölkopf
     given-names: Bernhard
   - family-names: Jin
@@ -34,14 +34,14 @@ preferred-citation:
       given-names: Yen-Shan
     - family-names: Simko
       given-names: Samuel
-    - family-names: Michalak
-      given-names: Felix
-    - family-names: Diwan
-      given-names: Nirav
-    - family-names: Singh
-      given-names: Arth
     - family-names: Thomas
       given-names: Aditya
+    - family-names: Singh
+      given-names: Arth
+    - family-names: Diwan
+      given-names: Nirav
+    - family-names: Michalak
+      given-names: Felix
     - family-names: Schölkopf
       given-names: Bernhard
     - family-names: Jin

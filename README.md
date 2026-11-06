@@ -246,8 +246,8 @@ tests/           fast CPU tests (pytest)
 ```bibtex
 @article{waibl2026eurosafeguard,
   title   = {EuroSafeGuard: Open Constitutional Classifiers},
-  author  = {Waibl, Leonhard and Chen, Yen-Shan and Simko, Samuel and Michalak, Felix and Diwan, Nirav and
-             Singh, Arth and Thomas, Aditya and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
+  author  = {Waibl, Leonhard and Chen, Yen-Shan and Simko, Samuel and Thomas, Aditya and
+             Singh, Arth and Diwan, Nirav and Michalak, Felix and Sch{\"o}lkopf, Bernhard and Jin, Zhijing},
   journal = {arXiv preprint arXiv:TBD},
   year    = {2026}
 }
